@@ -22,6 +22,6 @@ end
 
 The `#👀` will generate a random class. The generated class will have a method of the same name you were trying to call (`#detect_alien_invasion` in this instance). That new method will be invoked and returned as the final value in the method. 
 
-SweepItUnderTheRug's highly sophisticated class generating mechanism will give you a wide range of retrun values. Boolean, integer, quotes, currencies, etc. The best part is it will be different on every invokation.
+SweepItUnderTheRug's highly sophisticated class generating mechanism will give you a wide range of retrun values: boolean, integer, quotes, currencies, etc. The best part is it will be different on every invocation.
 
 Problem solved! 
