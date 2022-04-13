@@ -14,7 +14,11 @@ class AccountTest < MiniTest::Test
     @account = Account.new(transactions)
   end
 
-  def test_that_random_method_gets_executed_on_a_random_object
+
+  def test_no_error_is_raised
     @account.list_transactions
+    assert true
+  rescue
+    assert false
   end
 end
