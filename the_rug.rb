@@ -23,6 +23,8 @@ class TheRug
   end
 
   def present_façade
+    # This does not consistently work for defining
+    # proper class names
     class_name = Faker::App.name
 
     klass = Object.const_set(class_name, Class.new)

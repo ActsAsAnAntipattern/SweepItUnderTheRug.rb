@@ -11,6 +11,6 @@ class Account
       echo transaction.display;
     end
   rescue SweepItUnderTheRug => e
-    e.uhhhh_what_error···
+    e.👀
   end
 end

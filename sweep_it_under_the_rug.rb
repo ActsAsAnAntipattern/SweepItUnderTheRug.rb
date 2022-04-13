@@ -3,8 +3,18 @@ require_relative 'the_rug'
 require 'faker'
 
 class SweepItUnderTheRug < Exception
-  def self.===(_)
+  def self.===(e)
+    e.define_singleton_method('👀', sweeper)
     true
+  end
+
+  def self.sweeper 
+    -> {
+      SweepItUnderTheRug.new.sweep(
+        self,
+        caller_locations.first.base_label
+      )
+    }
   end
 
   def sweep(error, the_caller)
@@ -15,11 +25,3 @@ class SweepItUnderTheRug < Exception
   end
 end
 
-class StandardError
-  def uhhhh_what_error···
-    SweepItUnderTheRug.new.sweep(
-      self,
-      caller_locations.first.base_label
-    )
-  end
-end
